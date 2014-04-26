@@ -1,0 +1,20 @@
+vundle 使用
+1).git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+2).编辑vimrc文件
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" plugin on GitHub repo
+Plugin 'tomasr/molokai'
+Plugin 'scrooloose/nerdtree'
+let NERDTreeWinPos='left'
+let NERDTreeWinSize=31
+let NERDTreeChDirMode=1
+"
+ call vundle#end()            " required
+ filetype plugin indent on    " required
+ 3).重新运行vim
+ 4).运行PluginList或者BundleList查看安装的插件
+
