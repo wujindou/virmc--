@@ -7,8 +7,10 @@ set hlsearch "高亮搜索
 "在编辑过程中，在右下角显示光标位置的状态行
 set ruler
 "有时中文会显示乱码，用一下几条命令解决 
-let &termencoding=&encoding 
-set fileencodings=utf-8,gbk 
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set fileformats=unix
+set encoding=prc 
 syntax enable 
 syntax on "语法高亮
 colorscheme desert 
